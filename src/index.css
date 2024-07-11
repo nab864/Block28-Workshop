@@ -1,0 +1,81 @@
+*{ font-family: arial, sans-serif;
+  margin: 0;
+}
+body,
+body > div {
+  height: 100vh;
+  width: 100vw;
+}
+#container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#container > div {
+  display: flex;
+}
+
+#navbar {
+  padding: 1em;
+  justify-content: space-evenly;
+  background-image: linear-gradient(to right, aqua, #275db3, #b05f6d, #10b325, aqua);
+}
+.links:link {
+  text-decoration: none;
+  color: black;
+}
+.multi-link:hover {
+  background-image: linear-gradient(to right, rgb(35, 226, 226), #1e4580, #77434b, #0d6d1b, rgb(10, 12, 12));
+  background-clip: text;
+  color: transparent;
+}
+.links:visited {
+  text-decoration: none;
+  color: black;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+.home-link:hover {
+  text-decoration: none;
+  color: aqua;
+}
+.blue-link:hover {
+  text-decoration: none;
+  color: #7dd0e9;
+}
+.red-link:hover {
+  text-decoration: none;
+  color: #ffb6c2;
+}
+.green-link:hover {
+  text-decoration: none;
+  color: #76f787;
+}
+
+#main-section{
+  flex-grow: 1;
+}
+#main-section > div, .multicolor > div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.multicolor > div {
+  height: 100%;
+}
+.red {
+  background-color: #b05f6d;
+  color: white;
+}
+.blue {
+  background-color: #275db3;
+  color: white;
+}
+.green {
+  background-color: #10b325;
+  color: white;
+}
+.home {
+  background-color: aqua;
+  color: black;
+}
